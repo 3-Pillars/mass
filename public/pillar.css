@@ -1,0 +1,8 @@
+.pillar {
+    border: 8px solid red;
+    padding: 50% 10% 50% 10%;
+    display: inline-block;
+    margin: 5%;
+    display: relative;
+    z-index: 0;
+}
