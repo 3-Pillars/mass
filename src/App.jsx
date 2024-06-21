@@ -9,9 +9,9 @@ function App() {
     <>
       <div id="app-container">
         <div id="pillar-box">
-          <Pillar placement="outer"/>
-          <Pillar placement="inner"/>
-          <Pillar placement="outer"/>
+          <Pillar placement="left"/>
+          <Pillar placement="center"/>
+          <Pillar placement="right"/>
         </div>
         <div id="header">
           <img src={logoName} style={{width: "90%"}}/>
