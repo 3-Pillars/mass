@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Pillar from "./Components/Pillar"
+import logoName from './assets/white_transparent_logo_name.png'
 
 function App() {
 
@@ -8,12 +9,12 @@ function App() {
     <>
       <div id="app-container">
         <div id="pillar-box">
-          <Pillar />
-          <Pillar />
-          <Pillar />
+          <Pillar placement="outer"/>
+          <Pillar placement="inner"/>
+          <Pillar placement="outer"/>
         </div>
         <div id="header">
-          <h1>Mass Inc.</h1>
+          <img src={logoName} style={{width: "90%"}}/>
         </div>
       </div>
     </>
