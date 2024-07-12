@@ -1,3 +1,5 @@
+'use strict'
+
 import { useState } from 'react'
 import './App.css'
 import Pillar from "./Components/Pillar"

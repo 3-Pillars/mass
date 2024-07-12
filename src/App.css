@@ -31,7 +31,9 @@
 
 #header {
   margin: auto;
-  animation: 2s fadeIn;
+  position: relative;
+  animation: 2.5s fadeIn;
+  z-index: 1;
 }
 
 #pillar-box {
