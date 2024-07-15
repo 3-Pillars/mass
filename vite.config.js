@@ -10,6 +10,6 @@ export default defineConfig({
         usePolling: true
     }
   },
-  base: '/dist/'
+  base: './'
 })
  
