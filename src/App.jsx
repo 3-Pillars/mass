@@ -1,6 +1,5 @@
 'use strict'
 
-import { useState } from 'react'
 import './App.css'
 import Pillar from "./Components/Pillar"
 import logoName from './assets/white_transparent_logo_name.png'
