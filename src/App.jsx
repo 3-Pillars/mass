@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+      <h1>Header</h1>
       <div id="app-container">
         <div id="pillar-box">
           <Pillar placement="left"/>
