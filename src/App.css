@@ -18,6 +18,19 @@
   }
 }
 
+@keyframes shrink {
+  from {
+    width: 100%;
+    margin: 0 auto;
+  }
+  to {
+    margin: -40% auto 40% auto;
+    width: 20%;
+  }
+}
+
+
+
 .box {
   color:red;
   height:100%;
@@ -39,8 +52,9 @@
 #load-logo-container {
   display: grid;
   /* animation: fadeOut 0.4s forwards;
-  -moz-animation: fadeOut 0.4s forwards;
-  animation-delay: 2s; */
+  -moz-animation: fadeOut 0.4s forwards; */
+  animation: shrink 3s forwards;
+  animation-delay: 2s;
 }
 
 #pillar-box, #header {

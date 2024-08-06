@@ -29,7 +29,7 @@ function App() {
               <Pillar placement="right"/>
             </div>
             <div id="header">
-              <a href={'/home'}><img src={logoName} style={{width: "80%"}}/></a>
+              <img src={logoName} style={{width: "80%"}}/>
             </div>
           </div>
         : <div id="entry-button">
