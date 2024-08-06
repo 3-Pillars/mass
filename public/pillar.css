@@ -32,11 +32,10 @@
     /* animation: 1s ease-out 0s 1 slide-in; */
 }
 
-.pillar:hover{
+/* .pillar:hover{
     background-color: rgb(30, 30, 31);
-    /* top: -5px; */
     transform: translate(0, -10px);
-}
+} */
 
 #pillar-left {
     /* animation: 2s fadeIn, 1s ease-out 0s 1 slide-in; */
