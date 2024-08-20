@@ -32,7 +32,7 @@
 #header {
   margin: auto;
   position: relative;
-  animation: 2.5s fadeIn;
+  /* animation: 2.5s fadeIn; */
   z-index: 1;
 }
 

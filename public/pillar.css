@@ -35,22 +35,19 @@
 .pillar:hover{
     background-color: rgb(30, 30, 31);
     /* top: -5px; */
-    transform: translate(0, -10px);
+    /* transform: translate(0, -10px); */
 }
 
 #pillar-left {
-    /* animation: 2s fadeIn, 1s ease-out 0s 1 slide-in; */
-    animation: 1s fadeIn, 1s slide-in;
+    /* animation: 1s fadeIn, 1s slide-in; */
 }
 
 #pillar-center {
     padding: 42% 13% 42% 13%;
     margin-bottom: 3.5%;
-    /* animation: 1.5s ease-out 0s 1 slide-in; */
-    animation: 1.5s fadeIn, 1.5s slide-in;
+    /* animation: 1.5s fadeIn, 1.5s slide-in; */
 }
 
 #pillar-right {
-    /* animation: 2s ease-out 0s 1 slide-in; */
-    animation: 2s fadeIn, 2s slide-in;
+    /* animation: 2s fadeIn, 2s slide-in; */
 }
