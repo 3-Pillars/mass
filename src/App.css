@@ -29,6 +29,24 @@
   }
 }
 
+@keyframes sticky-parallax-header-move-and-size {
+  from {
+		/* background-position: 50% 0; */
+		height: 100vh;
+		/* font-size: calc(4vw + 1em); */
+    width: 100vh;
+    margin: 0 auto;
+	}
+	to {
+		/* background-position: 50% 100%; */
+		/* background-color: #0b1584; */
+		height: 10vh;
+		/* font-size: 2em; */
+    margin: 0 auto;
+    width: 10vh;
+	}
+}
+
 
 
 .box {
@@ -53,8 +71,11 @@
   display: grid;
   /* animation: fadeOut 0.4s forwards;
   -moz-animation: fadeOut 0.4s forwards; */
-  animation: shrink 3s forwards;
-  animation-delay: 2s;
+  /* animation: shrink 1s forwards; */
+  animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+  /* animation-delay: 2s; */
 }
 
 #pillar-box, #header {
