@@ -40,3 +40,26 @@
   margin-bottom: -10
 }
 
+@keyframes sticky-parallax-header-move-and-size {
+  from {
+		height: 100vh;
+    width: 100vh;
+    margin: 0 auto;
+	}
+	to {
+		height: 10vh;
+    margin: 0 auto;
+    width: 10vh;
+	}
+}
+
+#app-container {
+  display: grid;
+  /* animation: fadeOut 0.4s forwards;
+  -moz-animation: fadeOut 0.4s forwards; */
+  /* animation: shrink 1s forwards; */
+  animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+  /* animation-delay: 2s; */
+}
