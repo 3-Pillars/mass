@@ -18,13 +18,18 @@ function App() {
   //   }, 3000)
   // }, [])
 
+  console.log(sessionStorage.getItem('visited'))
+  if (!sessionStorage.getItem('visited')) {
+    sessionStorage.setItem('visited', true)
+  }
+
   return (
     <>
       <div id="load-logo-container">
         <div id="pillar-box">
-          <Pillar placement="left"/>
-          <Pillar placement="center"/>
-          <Pillar placement="right"/>
+          <Pillar placement="left" visited={sessionStorage.getItem('visited')}/>
+          <Pillar placement="center" visited={sessionStorage.getItem('visited')}/>
+          <Pillar placement="right" visited={sessionStorage.getItem('visited')}/>
         </div>
         <div id="header">
           <img src={logoName} style={{width: "80%"}}/>

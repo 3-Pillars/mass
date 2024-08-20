@@ -1,8 +1,10 @@
 import '../../public/pillar.css'
 
-export default function Pillar({placement}) {
+export default function Pillar({placement, visited}) {
     return <>
-        <div className='pillar' id={`pillar-${placement}`}>
-        </div>
+        {visited ?
+            <div className={`pillar pillar-${placement}-animation`} id={`pillar-${placement}`}></div> :
+            <div className={`pillar`} id={`pillar-${placement}`}></div>
+        }
     </>
 }
