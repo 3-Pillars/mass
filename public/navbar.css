@@ -99,7 +99,8 @@
 
 
   .active {
-    background-color: #1d4ed8;
+    background-color: #2a4088;
+    border-radius: 0.5rem;
 }
 
 nav {
@@ -137,7 +138,7 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #172554;
+    /* background-color: #172554; */
 }
 
 nav .menu {
@@ -153,7 +154,7 @@ nav .menu {
 
 nav .menu span {
     height: 0.4rem;
-    width: 100%;
+    /* width: 100%; */
     background-color: white;
     border-radius: 0.2rem;
 }
@@ -171,7 +172,7 @@ nav .menu span {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 0.2rem;
     }
 
@@ -180,12 +181,12 @@ nav .menu span {
     }
 
     nav ul li {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
     }
 
     nav ul li a {
-        margin: 0.2rem 0.5rem;
+        /* margin: 0.2rem 0.5rem; */
 
     }
 }
