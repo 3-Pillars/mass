@@ -1,22 +1,32 @@
 'use strict'
-import {Link} from 'react-router-dom'
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import  '../../public/navbar.css';
 import logo from '../assets/white_transparent_logo_name.png'
 
 
-function Navbar() {
+export default function Navbar() {
   return (
       <nav>
-        <Link to="/" className="title"><img src={logo} style={{width: "20%"}}/></Link>
+        <Link to="/" className="title"><img src={logo} style={{width: "17%"}}/></Link>
         <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/techniques">Techniques</Link></li>
-          <li><Link to="/retreats">Retreats</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/login">Login</Link></li>
+          <li><CustomLink to="/about">About</CustomLink></li>
+          <li><CustomLink to="/techniques">Techniques</CustomLink></li>
+          <li><CustomLink to="/retreats">Retreats</CustomLink></li>
+          <li><CustomLink to="/contact">Contact</CustomLink></li>
+          <li><CustomLink to="/login">Login</CustomLink></li>
         </ul>
       </nav>
   );
 }
-
-export default Navbar;
+function CustomLink({to, children, ...props}) {
+  // const path = window.location.pathname
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+  return (
+      <>
+      <li className={isActive ? "active" : ""}>
+          <Link to={to}>{children}</Link>
+      </li>
+      </>
+  )
+}
