@@ -8,6 +8,8 @@ import Techniques from './Components/pages/Techniques'
 import Retreats from './Components/pages/Retreats'
 import Contact from './Components/pages/Contact'
 
+import "./styles.css"
+
 
 function App() {
 
