@@ -1,22 +1,39 @@
 'use strict'
-import {Link} from 'react-router-dom'
+import React, { useState } from "react";
+import { Link, NavLink, useMatch, useResolvedPath } from "react-router-dom"
 import  '../../public/navbar.css';
 import logo from '../assets/white_transparent_logo_name.png'
 
 
-function Navbar() {
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
       <nav>
-        <Link to="/" className="title"><img src={logo} style={{width: "20%"}}/></Link>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/techniques">Techniques</Link></li>
-          <li><Link to="/retreats">Retreats</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/login">Login</Link></li>
+        <Link to="/" className="title"><img src={logo} style={{width: "10rem"}}/></Link>
+        <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul className={menuOpen ? "open" : ""}>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/about">About</CustomLink></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/techniques">Techniques</CustomLink></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/retreats">Retreats</CustomLink></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/contact">Contact</CustomLink></li>
         </ul>
       </nav>
   );
 }
-
-export default Navbar;
+function CustomLink({to, children, ...props}) {
+  // const path = window.location.pathname
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+  return (
+      <>
+      <li className={isActive ? "active" : ""}>
+          <Link to={to}>{children}</Link>
+      </li>
+      </>
+  )
+}
