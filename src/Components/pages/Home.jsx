@@ -1,10 +1,14 @@
 'use strict'
 import logo from '../../assets/logo.png'
+import { Carousel } from '../Carousel';
+import { slides } from "../../data/carousselData.json"
 
 function Home() {
   return (
     <>
-        <img src={logo} style={{width: '50%'}}></img>
+      <Carousel data={slides}/>
+
+        {/* <img src={logo} style={{width: '50%'}}></img> */}
     </>
   );
 }

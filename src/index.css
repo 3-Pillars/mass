@@ -17,6 +17,14 @@ body {
   margin: 0;
 }
 
+#app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* #root {
   max-width: 1280px;
