@@ -1,4 +1,4 @@
-.carousel {
+/* .carousel {
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,8 +14,16 @@
     height: 100%;
 }
 
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
 .slide-hidden {
     display: none;
+    opacity: 0;
+    transition-duration: 1s ease;
 }
 
 .arrow {
@@ -37,17 +45,17 @@
 .arrow-right {
     right: 1rem;
 }
-
+*/
 .indicators {
     display: flex;
     position: absolute;
-    bottom: 1rem;
+    bottom: 30rem;
 }
 
 .indicator {
     background-color: white;
-    height: 0.6rem;
-    width: 0.4rem;
+    height: 0.5rem;
+    width: 0.5rem;
     border-radius: 100%;
     border: none;
     outline: none;
@@ -58,4 +66,77 @@
 
 .indicator-inactive {
     background-color: grey;
+} 
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 600px; */
+    height: 100rem;
+    bottom: 10rem;
+    /* position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  .image {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    /* width: 1000px;
+    height: 600px;
+    border-radius: 10px; */
+  }
+
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    left: -7rem;
 }
+
+  .right-arrow {
+    right: 1rem;
+  }
+
+  /* .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  } */
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1);
+  }
