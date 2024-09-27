@@ -13,6 +13,7 @@ function App() {
   return (
     <>
     <Navbar />
+      <div className="side-bar"></div>
       <div id="app-container">
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
+      <div className="side-bar"></div>
     </>
   )
 }

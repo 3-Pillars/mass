@@ -1,0 +1,94 @@
+.jimmy-carousel {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.jcontent-active{
+ display: flexbox;
+}
+
+.jcontent-hidden {
+    display: none;
+}
+
+.jslide {
+    
+}
+
+.jslide-active {
+    display:inline-block;
+}
+
+.jslide-hidden {
+    display: none;
+}
+
+.jbutton {
+    justify-content: center;
+    display: flex;
+}
+
+.jbtn-text {
+    border: 6px red solid;
+    padding: 5px;
+    font-weight: 700;
+    background-color: orange;
+    color:black;
+    bottom: 50px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.jarrow {
+    /* position: relative; */
+    /* top: 50%;
+    left: 1.5rem; */
+    /* border: 5px solid orange; */
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    /* position: absolute; */
+    z-index: 999;
+}
+
+.jprev {
+    position: relative;
+    top: 0rem;
+    left: 5rem;
+}
+
+.jnext {
+    position: relative;
+    top: 0rem;
+    left: 36rem;
+    /* right: 3rem; */
+}
+
+.arrow {
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+  }
+  .arrow:hover {
+    background-color: #fff;
+    color: #777;
+  }
+  
+  .next {
+    top: 50%;
+    right: 1.5rem;
+  }
+  .prev {
+    top: 50%;
+    left: 1.5rem;
+  }
