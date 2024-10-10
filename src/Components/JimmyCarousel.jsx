@@ -5,7 +5,6 @@ import {slides} from '../data/jimmy-slider-data.json'
 
 export default function JimmyCarousel () {
     const [currentSlide, setCurrentSlide] = useState(0)
-
     const autoScroll = true
     let intervalTime = 5000
     let slideInterval
@@ -42,7 +41,7 @@ export default function JimmyCarousel () {
 
     return (
         <>
-            <div className='jimmy-carousel'>
+            {/* <div className='jimmy-carousel'>
                 <BsArrowLeftCircleFill className="jarrow jprev" onClick={prevSlide} />
                 <BsArrowRightCircleFill className="jarrow jnext" onClick={nextSlide} />
                 <div id='carousel-container'>
@@ -58,7 +57,23 @@ export default function JimmyCarousel () {
                         )
                     })}
                 </div>
-            </div>
+            </div> */}
+            {slides.map((slide, idx) => {
+                return (
+                    <div 
+                    className={`demo-wrap ${currentSlide=== idx ? "jcontent jcontent-active" : "jcontent jcontent-hidden"}`} 
+                    style={{backgroundImage: `url(${slide.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: "50% 0", backgroundSize: "cover"}}>
+                        <div className="demo-content">
+                            <div className='demo-block'>
+                                <h1>Hello World!</h1>
+                            </div>
+                            <div className='demo-block'>
+                                <span className='jbtn-text'>Learn More</span>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            )}
         </>
     )
 }
