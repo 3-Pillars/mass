@@ -12,10 +12,6 @@
     display: none;
 }
 
-.jslide {
-    
-}
-
 .jslide-active {
     display:inline-block;
 }
@@ -25,8 +21,8 @@
 }
 
 .jbutton {
-    justify-content: center;
-    display: flex;
+    /* justify-content: center; */
+    /* display: flex; */
 }
 
 .jbtn-text {

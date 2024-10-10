@@ -13,7 +13,6 @@ function App() {
   return (
     <>
     <Navbar />
-      <div className="side-bar"></div>
       <div id="app-container">
         <Routes>
           <Route path="/" element={<Home />}></Route>
