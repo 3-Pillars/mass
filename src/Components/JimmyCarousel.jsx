@@ -38,34 +38,21 @@ export default function JimmyCarousel () {
         }
         return () => clearInterval(slideInterval)
     }, [currentSlide])
-
+    let current;
     return (
         <>
-            {/* <div className='jimmy-carousel'>
-                <BsArrowLeftCircleFill className="jarrow jprev" onClick={prevSlide} />
-                <BsArrowRightCircleFill className="jarrow jnext" onClick={nextSlide} />
-                <div id='carousel-container'>
-                    {slides.map((slide, idx) => {
-                        console.log(idx)
-                        return (
-                            <div className={currentSlide=== idx ? "jcontent jcontent-active" : "jcontent jcontent-hidden"}>
-                                <img src={slide.src} key={idx} className={currentSlide=== idx ? "jslide jslide-active" : "jslide jslide-hidden"}/>
-                                <div className="jbutton" onClick={() => {console.log(`Learn more about ${idx}`)}}>
-                                    <span className='jbtn-text'>Learn More</span>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </div> */}
             {slides.map((slide, idx) => {
                 return (
                     <div 
+                    key={`slide-${idx}`}
                     className={`demo-wrap ${currentSlide=== idx ? "jcontent jcontent-active" : "jcontent jcontent-hidden"}`} 
                     style={{backgroundImage: `url(${slide.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: "50% 0", backgroundSize: "cover"}}>
                         <div className="demo-content">
                             <div className='demo-block'>
-                                <h1>Hello World!</h1>
+                                <h1>{slide.text}</h1>
+                            </div>
+                            <div className='demo-block'>
+                                <h1></h1>
                             </div>
                             <div className='demo-block'>
                                 <span className='jbtn-text'>Learn More</span>
@@ -74,6 +61,14 @@ export default function JimmyCarousel () {
                     </div>
                 )}
             )}
+            {console.log(`current: ${currentSlide}`)}
+            <div className='jdiv'>
+            <span className='jindicators'>
+                {slides.map((_, idx) => {
+                    return <button key={idx} onClick={() => setCurrentSlide(idx)} className={currentSlide === idx ? 'jindicator' : "jindicator jindicator-inactive"}></button>
+                })}
+            </span>
+            </div>
         </>
     )
 }
