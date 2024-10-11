@@ -23,6 +23,8 @@ nav .title {
 
 nav ul {
     display: flex;
+    /* border: solid 2px red; */
+    margin: 0 1rem;
 }
 
 nav ul li {
