@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
 import '../../public/jimmy-carousel.css'
 import {slides} from '../data/jimmy-slider-data.json'
 
