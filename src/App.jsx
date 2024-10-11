@@ -22,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
+      <div className="side-bar"></div>
     </>
   )
 }
