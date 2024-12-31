@@ -17,7 +17,7 @@
 }
 
 form {
-    border: solid rgba(123, 123, 123, 0.53) 10px;
+    border: solid rgba(123, 123, 123, 0.53) 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,10 +57,10 @@ textarea {
 }
 
 #submit-button {
-    border: solid green 6px;
+    border: solid darkgreen 3px;
     padding: 3px;
     border-radius: 15%;
-    background-color: lightgreen;
+    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,4 +71,13 @@ textarea {
     background-color: rgb(117, 214, 142);
     border: solid 6px darkgreen;
     user-select: none;
+}
+
+#confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3% 7% 0 7%;
+    margin: 3% 0 0 0;
 }

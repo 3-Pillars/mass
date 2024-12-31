@@ -5,19 +5,19 @@ import '../../../public/contact.css'
 
 function Contact() {
 
-  function search(formData) {
-    const query = formData.get("query");
-    alert(`You searched for '${query}'`);
-  }
-
   const [submitted, changeSubmitted] = useState(false)
 
   return (
     <>
-    <div id="contact-container">
+    {
+      submitted 
+      ? <div id="confirmation">
+          <h1>Thanks for reaching out to us! We will review your case and get back to you as soon as possible</h1>
+        </div>
+      : <div id="contact-container">
       <h1 id="header-text">Ready to make a change?</h1>
       <h1>We can help!</h1>
-      <form action={search}>
+      <form>
 
         <div className='form-section'>
           <div className='form-element'>
@@ -48,11 +48,12 @@ function Contact() {
         
         
         <div id="submit-button" onClick={() => changeSubmitted(true)}>
-          <div>Begin your</div><div>journey</div>
+          <div>BEGIN YOUR</div><div>JOURNEY</div>
         </div>
       </form>
-      {submitted ? <h1>Submitted!</h1> : null}
     </div>
+    }
+    
     </>
   );
 }
