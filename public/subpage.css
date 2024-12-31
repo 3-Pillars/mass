@@ -1,0 +1,28 @@
+.subpage-content {
+    /* display: flex; */
+
+    align-items: center;
+    display: inline;
+    /* border: solid 10px red; */
+}
+
+.info-chunk {
+    /* border: 10px red solid; */
+    display: flex;
+    margin: 5% 0 7% 0;
+}
+
+.chunk-left img {
+    justify-content: right;
+    margin: 0 0 0 5%;
+}
+
+.chunk-right img {
+    justify-content: left;
+    margin: 0 5% 0 0;
+}
+
+img {
+    align-items: right;
+    justify-content: center;
+}

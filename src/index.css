@@ -63,7 +63,7 @@ body {
 }
 
 .photo-right img {
-  display: ine;
+  /* display: ine; */
   position: relative;
   float: right;
 }
