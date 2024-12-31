@@ -24,7 +24,7 @@ nav .title {
 nav ul {
     display: flex;
     /* border: solid 2px red; */
-    margin: 0 1rem;
+    margin: 0 0rem;
 }
 
 nav ul li {
