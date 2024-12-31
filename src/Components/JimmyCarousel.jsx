@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import '../../public/jimmy-carousel.css'
 import {slides} from '../data/jimmy-slider-data.json'
+import { Link, NavLink, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function JimmyCarousel () {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -54,7 +55,8 @@ export default function JimmyCarousel () {
                                 <h1></h1>
                             </div>
                             <div className='demo-block'>
-                                <span className='jbtn-text'>Learn More</span>
+                            <span className='jbtn-text' ><CustomLink to={`/${slide.link}`}>Learn More</CustomLink></span>
+                                {/* <span className='jbtn-text' onClick={() => {console.log(slide.text)}}>Learn More</span> */}
                             </div>
                         </div>
                     </div>
@@ -71,3 +73,13 @@ export default function JimmyCarousel () {
         </>
     )
 }
+function CustomLink({to, children, ...props}) {
+    // const path = window.location.pathname
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+    return (
+        <>
+            <Link to={to} style={{color: "white", textDecoration: "none"}}>{children}</Link>
+        </>
+    )
+  }
