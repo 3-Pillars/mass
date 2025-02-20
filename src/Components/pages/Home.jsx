@@ -1,13 +1,13 @@
 'use strict'
 import logo from '../../assets/logo.png'
-import JimmyCarousel from '../JimmyCarousel';
+import Carousel from '../Carousel';
 import Placeholder from '../Placeholder';
 
 
 function Home() {
   return (
     <>
-      <JimmyCarousel />
+      <Carousel />
       <div className='page-body'>
         <h1>Mission Statement</h1>
         <span>There is unseen potential in the world around us everyday which goes untapped and unrealized. In this divided age of information overload we need to be selective about our attention and experiences.  Without focus life can feel out of control or out of focus.  At Mass© the best version of you is our focus.  Our system provides the path to Great Restructuring of one's life, which will help you Navigate© to the next level.  This will allow for each individual to feel connected and present; and ultimately lead to the ultimate convergence with the world around you.</span>
