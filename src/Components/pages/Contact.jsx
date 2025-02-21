@@ -16,7 +16,6 @@ function Contact() {
         </div>
       : <div id="contact-container">
       <h1 id="header-text">Ready to make a change?</h1>
-      <h1>We can help!</h1>
       <form>
 
         <div className='form-section'>

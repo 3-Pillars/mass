@@ -1,11 +1,11 @@
 'use strict'
 import Placeholder from "../Placeholder";
 import '../../../public/subpage.css'
-import mapShot from '../../assets/map_screenshot_proto.jpg'
-import water from '../../assets/water.png'
-import mountain from '../../assets/mountain.jpg'
-import meditation from '../../assets/meditation.jpg'
-import tea from '../../assets/tea.jpg'
+import mapShot from '../../../public/assets/map_screenshot_proto.jpg'
+import water from '../../../public/assets/water.png'
+import mountain from '../../../public/assets/mountain.jpg'
+import meditation from '../../../public//assets/meditation.jpg'
+import tea from '../../../public/assets/tea.jpg'
 
 function Retreats() {
   return (

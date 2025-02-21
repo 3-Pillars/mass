@@ -1,13 +1,12 @@
 .active {
-    background-color: #2a4088;
-    border-radius: 0.5rem;
+    border: solid #D2D2D3 2px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
+    background-color: #565656;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -23,7 +22,7 @@ nav .title {
 
 nav ul {
     display: flex;
-    margin: 0 0rem;
+    margin: 0 1rem;
 }
 
 nav ul li {
@@ -34,7 +33,7 @@ nav ul li a {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 0.5rem;
+    padding: .1rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
