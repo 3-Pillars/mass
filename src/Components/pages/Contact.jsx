@@ -14,13 +14,13 @@ function Contact() {
       ? <div id="confirmation">
           <h1>Thanks for reaching out to us! We will review your case and get back to you as soon as possible</h1>
         </div>
-      : <div id="contact-container">
-      <h1 id="header-text">Ready to make a change?</h1>
+      : <div className="page-body">
+      <h1 id="header-text">READY TO MAKE THE CHANGE?</h1>
       <form>
 
         <div className='form-section'>
           <div className='form-element'>
-            <label>Name: </label>
+            <label>NAME </label>
           </div>
           <div className='form-element'>
             <input name="query" />
@@ -29,7 +29,7 @@ function Contact() {
 
         <div className='form-section'>
           <div className='form-element'>
-            <label>Email: </label>
+            <label>EMAIL </label>
           </div>
           <div className='form-element'>
             <input name="query" />
@@ -38,7 +38,7 @@ function Contact() {
         
         <div className='form-section'>  
           <div className='form-element'>
-            <label>Briefly tell us how we can help you</label>
+            <label>INQUIRY</label>
           </div>
           <div className='form-element'>
             <textarea></textarea>
@@ -47,7 +47,7 @@ function Contact() {
         
         
         <div id="submit-button" onClick={() => changeSubmitted(true)}>
-          <div>BEGIN YOUR</div><div>JOURNEY</div>
+          <div>BEGIN YOUR JOURNEY</div>
         </div>
       </form>
     </div>

@@ -12,7 +12,7 @@ function Retreats() {
     <>
     <div className="page-body">
       <div className="subpage-content">
-        <h1>Learn to Navigate out in the World</h1>
+        <h1>FIND YOUR MASS</h1>
         <div className="info-chunk chunk-left">
           <p>These techniques are fully explored during our 10-day all inclusive retreat in <a href="https://maps.app.goo.gl/8AFr1wDRzFzBb4rQ9">Catastrofe</a>.
           <br /><br /><br /> 
