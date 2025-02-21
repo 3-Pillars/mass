@@ -1,19 +1,19 @@
 {
     "slides": [
       {
-        "src": "https://picsum.photos/seed/img1/600/400",
+        "src": "../../public/assets/diagram.png",
         "alt": "Image 1 for carousel",
         "text": "Awaken the Nine",
         "link": "about"
       },
       {
-        "src": "https://picsum.photos/seed/img2/600/400",
+        "src": "../../public/assets/notebook_glyphs.jpg",
         "alt": "Image 2 for carousel",
         "text": "Unlock your ability to Naviagate",
         "link": "techniques"
       },
       {
-        "src": "https://picsum.photos/seed/img3/600/400",
+        "src": "../../public/assets/grandpa_willow.jpg",
         "alt": "Image 3 for carousel",
         "text": "Discover our History",
         "link": "retreats"

@@ -21,13 +21,14 @@
 }
 
 .carousel-btn-text {
-    border: 6px white solid;
+    border: 3px white solid;
     padding: 10px;
-    font-weight: 900;
+    font-weight: 1000;
     color:white;
     text-shadow: black 2px 2px 2px;
     box-shadow: black  2px 2px 2px;
-    border-radius: 10%;
+    background-color: rgba(255,255,255,0.2);
+    /* border-radius: 10%; */
     position: relative;
     margin-top: -20px;
     

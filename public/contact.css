@@ -64,7 +64,7 @@ textarea {
 
 #submit-button:active {
     background-color: rgb(117, 214, 142);
-    border: solid 6px ##448c44;
+    border: solid 6px #448c44;
     user-select: none;
 }
 

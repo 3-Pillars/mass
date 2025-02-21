@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #717173;
   background-image: url('/public/assets/logo-no-title-gray.png');
+  background-attachment: fixed;
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center 0%;
@@ -30,6 +31,10 @@ body {
   background-attachment: fixed;
   background-blend-mode: lighten;
   margin: 10% 27% 0 27%;
+}
+
+#homepage {
+  margin: 2% 27% 0 27%;
 }
 
 .photo-left {
