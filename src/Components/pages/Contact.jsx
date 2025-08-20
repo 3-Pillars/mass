@@ -1,11 +1,31 @@
 'use strict'
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import '../../../public/contact.css'
+import emailjs from '@emailjs/browser';
 
 
 function Contact() {
 
-  const [submitted, changeSubmitted] = useState(false)
+  const form = useRef();
+  let submitted = false
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_97dfvlh', 'template_rzio7df', form.current, {
+        publicKey: 'oeWLvWfMOyycOBeUE',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          console.log(error)
+        },
+      );
+  };
 
   return (
     <>
@@ -16,14 +36,14 @@ function Contact() {
         </div>
       : <div className="page-body">
       <h1 id="header-text">READY TO MAKE THE CHANGE?</h1>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
 
         <div className='form-section'>
           <div className='form-element'>
             <label>NAME </label>
           </div>
           <div className='form-element'>
-            <input name="query" />
+            <input type="text" name="user_name" />
           </div>
         </div>
 
@@ -32,7 +52,7 @@ function Contact() {
             <label>EMAIL </label>
           </div>
           <div className='form-element'>
-            <input name="query" />
+            <input type="email" name="user_email" />
           </div>
         </div>
         
@@ -41,17 +61,31 @@ function Contact() {
             <label>INQUIRY</label>
           </div>
           <div className='form-element'>
-            <textarea></textarea>
+            <textarea name="inquiry" />
           </div>
         </div>
-        
-        
-        <div id="submit-button" onClick={() => changeSubmitted(true)}>
-          <div>BEGIN YOUR JOURNEY</div>
+        <div id="submit-button">
+          <input id="submit-input" type="submit" value="Send" />
         </div>
+        
+
+        {/* <div id="submit-button" onClick={sendEmail}>
+          <div>BEGIN YOUR JOURNEY</div>
+        </div> */}
       </form>
     </div>
     }
+
+    {/* <form ref={form} onSubmit={sendEmail}> */}
+    {/* <form ref={form} onSubmit={() => {console.log('hello there scum')}}> */}
+      {/* <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form> */}
     
     </>
   );

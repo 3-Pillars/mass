@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf'),
+       url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,7 +21,7 @@
   background-attachment: fixed;
   background-size: 70%;
   background-repeat: no-repeat;
-  background-position: center 0%;
+  background-position: center;
 }
 
 body {
@@ -70,5 +78,24 @@ body {
 }
 
 h1, label {
-  color: white
+  color: white;
 }
+
+h1 {
+  font-family: 'montserrat';
+  font-size: 40px;
+  font-weight: 400;
+}
+
+p, span {
+  font-family: 'montserrat';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+/* 
+Headings- Size 40px weight 400 Regular (UPPERCASE)
+Body - Size 14px weight 300 Light (Sentence case)
+Menu and Buttons - Size 20px weight 400 Regular (UPPERCASE)
+Subheadings -  Size 16px weight 400 Regular (UPPERCASE) */

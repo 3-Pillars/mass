@@ -7,6 +7,8 @@ import About from './Components/pages/About'
 import Techniques from './Components/pages/Techniques'
 import Retreats from './Components/pages/Retreats'
 import Contact from './Components/pages/Contact'
+import Process from './Components/pages/Process'
+import Nine from './Components/pages/Nine'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="/techniques" element={<Techniques />}></Route>
           <Route path="/retreats" element={<Retreats />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/process" element={<Process />}></Route>
+          <Route path="/nine" element={<Nine />}></Route>
         </Routes>
       </div>
       <div className="side-bar"></div>

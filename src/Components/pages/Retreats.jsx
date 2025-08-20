@@ -4,7 +4,7 @@ import '../../../public/subpage.css'
 import mapShot from '../../../public/assets/map_screenshot_proto.jpg'
 import water from '../../../public/assets/water.png'
 import mountain from '../../../public/assets/mountain.jpg'
-import meditation from '../../../public//assets/meditation.jpg'
+import meditation from '../../../public/assets/meditation.jpg'
 import tea from '../../../public/assets/tea.jpg'
 
 function Retreats() {

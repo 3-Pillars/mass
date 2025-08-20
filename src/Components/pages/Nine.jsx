@@ -3,7 +3,7 @@ import Placeholder from "../Placeholder";
 import diagram from '../../../public/assets/diagram.png'
 
 
-function Techniques() {
+function Nine() {
   return (
     <>
     <div className="page-body">
@@ -29,4 +29,4 @@ function Techniques() {
   );
 }
 
-export default Techniques;
+export default Nine;
