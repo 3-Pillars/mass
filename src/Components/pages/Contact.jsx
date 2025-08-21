@@ -29,19 +29,19 @@ function Contact() {
 
     console.log(e)
 
-    // emailjs
-    //   .sendForm('service_97dfvlh', 'template_rzio7df', form.current, {
-    //     publicKey: 'oeWLvWfMOyycOBeUE',
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log('SUCCESS!');
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error.text);
-    //       console.log(error)
-    //     },
-    //   );
+    emailjs
+      .sendForm('service_97dfvlh', 'template_rzio7df', form.current, {
+        publicKey: 'oeWLvWfMOyycOBeUE',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          console.log(error)
+        },
+      );
   };
 
   return (
@@ -81,29 +81,12 @@ function Contact() {
             <textarea name="inquiry" value={formData.user_inquiry} onChange={handleInputChange}/>
           </div>
         </div>
-        <div id="submit-button">
+        <div id={isFormComplete ? 'submit-button-ready' : 'submit-button-not-ready'} onClick={isFormComplete ? sendEmail: null}>
           <input id="submit-input" disabled={!isFormComplete} type="submit"value="BEGIN YOUR JOURNEY" />
         </div>
-        
-
-        {/* <div id="submit-button" onClick={sendEmail}>
-          <div>BEGIN YOUR JOURNEY</div>
-        </div> */}
       </form>
     </div>
-    }
-
-    {/* <form ref={form} onSubmit={sendEmail}> */}
-    {/* <form ref={form} onSubmit={() => {console.log('hello there scum')}}> */}
-      {/* <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form> */}
-    
+    }    
     </>
   );
 }

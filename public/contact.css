@@ -58,7 +58,7 @@ textarea {
     background-color: rgba(0, 0, 0, 0.01);
 }
 
-#submit-button {
+#submit-button-not-ready {
     border: solid #365136 2px;
     padding: 3px;
     background-color: rgba(82,105,82, 0.7);
@@ -70,9 +70,21 @@ textarea {
     font-weight: 400;
 }
 
-#submit-button:active {
-    background-color: rgb(117, 214, 142);
-    border: solid 6px #448c44;
+#submit-button-ready {
+    border: solid #365136 2px;
+    padding: 3px;
+    background-color: rgba(82,105,82, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#submit-button-ready:active {
+    background-color: rgba(49, 99, 62, 0.534);
+    border: solid 2px #1b3f1b;
     user-select: none;
 }
 
