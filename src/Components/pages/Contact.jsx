@@ -6,25 +6,42 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
 
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    inquiry: ""
+  })
+
+  const handleInputChange = (e) => {
+    const {name, value } = e.target;
+    setFormData(prevState => ({ ...prevState, [name]: value}))
+  }
+
+  let isFormComplete = formData.user_email && formData.user_name && formData.inquiry
+
+  
+
   const form = useRef();
   let submitted = false
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_97dfvlh', 'template_rzio7df', form.current, {
-        publicKey: 'oeWLvWfMOyycOBeUE',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          console.log(error)
-        },
-      );
+    console.log(e)
+
+    // emailjs
+    //   .sendForm('service_97dfvlh', 'template_rzio7df', form.current, {
+    //     publicKey: 'oeWLvWfMOyycOBeUE',
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log('SUCCESS!');
+    //     },
+    //     (error) => {
+    //       console.log('FAILED...', error.text);
+    //       console.log(error)
+    //     },
+    //   );
   };
 
   return (
@@ -43,7 +60,7 @@ function Contact() {
             <label>NAME </label>
           </div>
           <div className='form-element'>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" value={formData.user_name} onChange={handleInputChange}/>
           </div>
         </div>
 
@@ -52,7 +69,7 @@ function Contact() {
             <label>EMAIL </label>
           </div>
           <div className='form-element'>
-            <input type="email" name="user_email" />
+            <input type="email" name="user_email" value={formData.user_email} onChange={handleInputChange}/>
           </div>
         </div>
         
@@ -61,11 +78,11 @@ function Contact() {
             <label>INQUIRY</label>
           </div>
           <div className='form-element'>
-            <textarea name="inquiry" />
+            <textarea name="inquiry" value={formData.user_inquiry} onChange={handleInputChange}/>
           </div>
         </div>
         <div id="submit-button">
-          <input id="submit-input" type="submit" value="Send" />
+          <input id="submit-input" disabled={!isFormComplete} type="submit"value="BEGIN YOUR JOURNEY" />
         </div>
         
 
