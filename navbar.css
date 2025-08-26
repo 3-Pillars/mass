@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf'),
+            url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .active {
     border: solid #D2D2D3 2px;
 }
@@ -6,7 +14,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #565656;
+    background-color: #616161;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -27,7 +35,12 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    font-family: 'montserrat';
+    font-size: 20px;
+    font-weight: 400;
 }
+
+/* Menu and Buttons - Size 20px weight 400 Regular (UPPERCASE)*/
 
 nav ul li a {
     display: block;
@@ -87,3 +100,5 @@ nav .menu span {
 
     }
 }
+
+
