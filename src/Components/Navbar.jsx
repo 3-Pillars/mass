@@ -18,7 +18,9 @@ export default function Navbar() {
         </div>
         <ul className={menuOpen ? "open" : ""}>
           <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/about">ABOUT</CustomLink></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/nine">THE NINE</CustomLink></li>
           <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/techniques">TECHNIQUES</CustomLink></li>
+          <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/navigation">NAVIGATION</CustomLink></li>
           <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/retreats">RETREATS</CustomLink></li>
           <li onClick={() => setMenuOpen(!menuOpen)}><CustomLink to="/contact">CONTACT</CustomLink></li>
         </ul>

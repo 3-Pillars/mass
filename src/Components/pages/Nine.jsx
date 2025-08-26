@@ -7,7 +7,7 @@ function Nine() {
   return (
     <>
     <div className="page-body">
-      <h1>BELIEFS IN PRACTICE</h1>
+      <h1>THE NINE</h1>
       <span>Belief in one’s self to fulfill potential is meaningless without purpose. Mass© guidance to a greater purpose is to seek convergence through our strong global network of industry leaders and grassroots community groups. Finding your own purpose must come from within but getting there can be easier with Mass© Navigation© System or MNS. The principals laid out in this system will allow users to confront themselves like never before and learn what truly matters to them. The system takes time but with great patience comes great purpose.</span>
       <br />
       <div style={{
