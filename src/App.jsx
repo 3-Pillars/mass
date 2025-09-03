@@ -9,6 +9,7 @@ import Retreats from './Components/pages/Retreats'
 import Contact from './Components/pages/Contact'
 import Navigation from './Components/pages/Navigation'
 import Nine from './Components/pages/Nine'
+import ThreePillars from './Components/pages/ThreePillars'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/navigation" element={<Navigation />}></Route>
           <Route path="/nine" element={<Nine />}></Route>
+          <Route path="/threepillars" element={<ThreePillars />}></Route>
         </Routes>
       </div>
       <div className="side-bar"></div>

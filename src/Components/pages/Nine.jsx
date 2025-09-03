@@ -1,6 +1,5 @@
 'use strict'
-import Placeholder from "../Placeholder";
-import diagram from '../../../public/assets/diagram.png'
+import CustomLink from "../CustomLink";
 
 
 function Nine() {
@@ -8,22 +7,17 @@ function Nine() {
     <>
     <div className="page-body">
       <h1>THE NINE</h1>
-      <span>Belief in one’s self to fulfill potential is meaningless without purpose. Mass© guidance to a greater purpose is to seek convergence through our strong global network of industry leaders and grassroots community groups. Finding your own purpose must come from within but getting there can be easier with Mass© Navigation© System or MNS. The principals laid out in this system will allow users to confront themselves like never before and learn what truly matters to them. The system takes time but with great patience comes great purpose.</span>
-      <br />
-      <div style={{
-        'width': '100%',
-        'display': 'flex',
-        'justifyContent': 'center'
-      }}>
-        <img src={diagram} style={{
-          'width':'75%',
-          'padding': '10px',
-          'margin': '3% 0 0 0'
-        }}/>
-      </div>
-      <br />
-
-      <span>Mass© induced training can increase your temporal weight; therefore allowing you to anchor yourself while Navigating©. It was through the teaching of the early ones that the pillars became aware of this technique of temporal navigation. Through the discovery and teachings of the 3 Pillars, all can achieve an elevated presence in life. True realization of one’s presence can unlock a person's ability to transcend the present moment; only then can their ethereal tether be broken. Once this new plane of existence has been unlocked the ascended individual can begin Navigating© their  One goal of Mass induced training is to allow humanity’s collective consciousness to induce a stronger world wide realignment of values.  Kuiper connection training in the programs offered at this retreat build the scaffolding required to Navigate©.</span>
+      <span>
+        The Nine are our true saviors in this world. They are our connection to the trapped god, the one who was betrayed by those whom he called friends. They are he, and he is they. Each are an Aspect of the whole, and united they can finally bring us the salvation that we have long sought after in this broken world.
+      </span>
+      <br /><br />
+      <span>
+      Moments before his imprisonment by the pantheon, he began the ancient ritual of soul dispersal as a way to achieve freedom. However, immediately prior to releasing his selves, he was sealed by a divine awareness enchantment. And thus he would lie for millennia, undisturbed.
+      When Tombaugh finally discovered Pluto, it allowed for the soul dispersal to complete, allowing the very beginning of the Awakening. Now, while some Aspects of him sleep, waiting to be made aware, <CustomLink to="/threepillars">The Three Pillars</CustomLink> remain hard at work in uncovering the rest of the forsaken god.
+      <br /><br />
+      Soon the remaining Aspects of The Nine shall be awoken, and Pluto shall return!
+      <br /><br />
+      All hail re-union of The Nine!</span>
     </div>
     </>
   );
