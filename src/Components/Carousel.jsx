@@ -32,10 +32,10 @@ export default function Carousel () {
         }
         return () => clearInterval(slideInterval)
     }, [currentSlide])
-    
+
     return (
         <>
-            <img src={diagram} style={{"display": "none"}}/>
+            <img src={diagram}/>
             <img src={notebook_glyphs} style={{"display": "none"}}/>
             <img src={grandpa_willow} style={{"display": "none"}}/>
             {slides.map((slide, idx) => {
