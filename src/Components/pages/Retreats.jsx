@@ -39,7 +39,7 @@ function Retreats() {
         <div className="info-chunk chunk-right">
           <img src={meditation} style={{width: "50%"}}/>
           <div className="chunk-text">
-            <h2>Breathe</h2>
+            <h2>Reflect</h2>
             <p>Meditation in death Valley will free you of your connection to this life and guide you to find greater purpose than your current dual awareness.</p>
           </div>
         </div>

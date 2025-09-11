@@ -61,7 +61,6 @@ export default function Carousel () {
                     </div>
                 )}
             )}
-            {console.log(`current: ${currentSlide}`)}
             <div className='carousel-div'>
             <span className='carousel-indicators'>
                 {slides.map((_, idx) => {
