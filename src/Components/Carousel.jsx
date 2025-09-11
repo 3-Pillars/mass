@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react'
 import '../../public/carousel.css'
 import {slides} from '../data/slider-data.json'
 import { Link, NavLink, useMatch, useResolvedPath } from "react-router-dom"
+import diagram from '../../public/assets/diagram.png'
+import notebook_glyphs from '../../public/assets/notebook_glyphs.jpg'
+import grandpa_willow from '../../public/assets/grandpa_willow.jpg'
 
 export default function Carousel () {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -19,15 +22,6 @@ export default function Carousel () {
 
     }
 
-    const prevSlide = () => {
-        if (currentSlide == 0) {
-            setCurrentSlide(slides.length -1)
-        }
-        else {
-            setCurrentSlide(currentSlide-1)
-        }
-    }
-
     function auto() {
         slideInterval = setInterval(nextSlide, intervalTime)
     }
@@ -38,9 +32,12 @@ export default function Carousel () {
         }
         return () => clearInterval(slideInterval)
     }, [currentSlide])
-    let current;
+    
     return (
         <>
+            <img src={diagram} style={{"display": "none"}}/>
+            <img src={notebook_glyphs} style={{"display": "none"}}/>
+            <img src={grandpa_willow} style={{"display": "none"}}/>
             {slides.map((slide, idx) => {
                 return (
                     <div 

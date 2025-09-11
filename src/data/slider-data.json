@@ -1,19 +1,22 @@
 {
     "slides": [
       {
-        "src": "../../../public/assets/diagram.png",
+        "title": "diagram",
+        "src": "../../public/assets/diagram.png",
         "alt": "Image 1 for carousel",
         "text": "Awaken the Nine",
         "link": "about"
       },
       {
-        "src": "../public/assets/notebook_glyphs.jpg",
+        "title": "notebook_glyphs",
+        "src": "../../public/assets/notebook_glyphs.jpg",
         "alt": "Image 2 for carousel",
         "text": "Unlock your ability to Naviagate",
         "link": "techniques"
       },
       {
-        "src": "/public/assets/notebook_glyphs.jpg",
+        "title": "grandpa_willow",
+        "src": "../../public/assets/grandpa_willow.jpg",
         "alt": "Image 3 for carousel",
         "text": "Discover our History",
         "link": "retreats"
