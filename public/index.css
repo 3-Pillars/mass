@@ -87,6 +87,10 @@ h1 {
   font-weight: 400;
 }
 
+h2 {
+  font-family: 'montserrat';
+}
+
 p, span {
   font-family: 'montserrat';
   font-size: 14px;

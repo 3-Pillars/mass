@@ -14,25 +14,40 @@ function Retreats() {
       <div className="subpage-content">
         <h1>FIND YOUR MASS</h1>
         <div className="info-chunk chunk-left">
-          <p>These techniques are fully explored during our 10-day all inclusive retreat in <a href="https://maps.app.goo.gl/8AFr1wDRzFzBb4rQ9">Catastrofe</a>.
-          <br /><br /><br /> 
-          This location is centered on the location of Tombaugh’s impact, where the meteor shower documented by Clyde Tombaugh in 1949 made impact.</p>
+          <div className="chunk-text">
+            <h2>Navigate</h2>
+            <p>These techniques are fully explored during our 10-day all inclusive retreat in <a href="https://maps.app.goo.gl/8AFr1wDRzFzBb4rQ9">Catastrofe</a>.
+            <br /><br /><br /> 
+            This location is centered on the location of Tombaugh’s impact, where the meteor shower documented by Clyde Tombaugh in 1949 made impact.</p>
+          </div>
           <img src={mapShot} style={{width: "50%"}}/>
         </div>
         <div className="info-chunk chunk-right">
           <img src={water} style={{width: "30%"}}/>
-          <p>Every member will be bathed in the cleansing waters of Minnetonka.  The water will positively charge your ions and boost your kuiper connection levels.</p>
+          <div className="chunk-text">
+            <h2>Cleanse</h2>
+            <p>Every member will be bathed in the cleansing waters of Minnetonka.  The water will positively charge your ions and boost your kuiper connection levels.</p>
+          </div>
         </div>
         <div className="info-chunk chunk-left">
-          <p>Spending a week breathing in the air of Mount Hubbard will cleanse your lungs and mind. A lifestyle of clean breathing, thinking and being will elevate your awareness into the present moment.</p>
+          <div className="chunk-text">
+            <h2>Breathe</h2>
+            <p>Spending a week breathing in the air of Mount Hubbard will cleanse your lungs and mind. A lifestyle of clean breathing, thinking and being will elevate your awareness into the present moment.</p>          
+          </div>
           <img src={mountain} style={{width: "50%"}}/>
         </div>
         <div className="info-chunk chunk-right">
           <img src={meditation} style={{width: "50%"}}/>
-          <p>Meditation in death Valley will free you of your connection to this life and guide you to find greater purpose than your current dual awareness.</p>
+          <div className="chunk-text">
+            <h2>Breathe</h2>
+            <p>Meditation in death Valley will free you of your connection to this life and guide you to find greater purpose than your current dual awareness.</p>
+          </div>
         </div>
         <div className="info-chunk chunk-left">
-          <p>Members will partake in a tea ceremony with tea sourced from the Bitteroot forest near the Sapphire mountains. The tea contains trace levels of crystalized Kuiper that will enhance your psychic ability.</p>
+          <div className="chunk-text">
+            <h2>Consume</h2>
+            <p>Members will partake in a tea ceremony with tea sourced from the Bitteroot forest near the Sapphire mountains. The tea contains trace levels of crystalized Kuiper that will enhance your psychic ability.</p>
+          </div>
           <img src={tea} style={{width: "100%"}}/>
         </div>
       </div>

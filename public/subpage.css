@@ -1,15 +1,15 @@
 .subpage-content {
-    /* display: flex; */
-
     align-items: center;
     display: inline;
-    /* border: solid 10px red; */
 }
 
 .info-chunk {
-    /* border: 10px red solid; */
     display: flex;
     margin: 5% 0 7% 0;
+}
+
+.chunk-text{
+    margin-top: -3.5%;
 }
 
 .chunk-left img {
