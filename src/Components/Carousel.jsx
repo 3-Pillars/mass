@@ -35,7 +35,7 @@ export default function Carousel () {
 
     return (
         <>
-            <img src={diagram}/>
+            <img src={diagram} style={{"display": "none"}}/>
             <img src={notebook_glyphs} style={{"display": "none"}}/>
             <img src={grandpa_willow} style={{"display": "none"}}/>
             {slides.map((slide, idx) => {
