@@ -25,10 +25,10 @@ function Retreats() {
             <br /><br /><br /> 
             This location is centered on the location of Tombaugh’s impact, where the meteor shower documented by Clyde Tombaugh in 1949 made impact.</p>
           </div>
-          <img src={navigate} style={{width: "40%"}}/>
+          <img src={navigate} style={{width: "40%", height: "100%", margin: "auto", display: "block", 'padding-left': '20px'}}/>
         </div>
         <div className="info-chunk chunk-right">
-          <img src={cleanse} style={{width: "40%"}}/>
+          <img src={cleanse} style={{width: "40%", height: "100%",  margin: "auto", display: "block", 'padding-right': '20px'}}/>
           <div className="chunk-text">
             <h2>Cleanse</h2>
             <p>Every member will be bathed in the cleansing waters of Minnetonka.  The water will positively charge your ions and boost your kuiper connection levels.</p>
@@ -39,10 +39,10 @@ function Retreats() {
             <h2>Breathe</h2>
             <p>Spending a week breathing in the air of Mount Hubbard will cleanse your lungs and mind. A lifestyle of clean breathing, thinking and being will elevate your awareness into the present moment.</p>          
           </div>
-          <img src={breathe} style={{width: "40%"}}/>
+          <img src={breathe} style={{width: "40%", height: "100%", margin: "auto", display: "block", 'padding-left': '20px'}}/>
         </div>
         <div className="info-chunk chunk-right">
-          <img src={reflect} style={{width: "40%"}}/>
+          <img src={reflect} style={{width: "40%", height: "100%", margin: "auto", display: "block", 'padding-right': '20px'}}/>
           <div className="chunk-text">
             <h2>Reflect</h2>
             <p>Meditation in death Valley will free you of your connection to this life and guide you to find greater purpose than your current dual awareness.</p>
@@ -53,7 +53,7 @@ function Retreats() {
             <h2>Consume</h2>
             <p>Members will partake in a tea ceremony with tea sourced from the Bitteroot forest near the Sapphire mountains. The tea contains trace levels of crystalized Kuiper that will enhance your psychic ability.</p>
           </div>
-          <img src={consume} style={{width: "40%"}}/>
+          <img src={consume} style={{width: "40%", height: "100%", margin: "auto", display: "block", 'padding-left': '20px'}}/>
         </div>
       </div>
     </div>
