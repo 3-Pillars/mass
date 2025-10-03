@@ -10,6 +10,7 @@ import Contact from './Components/pages/Contact'
 import Navigation from './Components/pages/Navigation'
 import Nine from './Components/pages/Nine'
 import ThreePillars from './Components/pages/ThreePillars'
+import Login from './Components/pages/Login'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/navigation" element={<Navigation />}></Route>
           <Route path="/nine" element={<Nine />}></Route>
           <Route path="/threepillars" element={<ThreePillars />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </div>
       <div className="side-bar"></div>

@@ -2,7 +2,6 @@
 import React, {useState, useRef} from 'react';
 import '../../../public/contact.css'
 import emailjs from '@emailjs/browser';
-import Register from "./Register"
 
 
 function Contact() {
@@ -87,8 +86,7 @@ function Contact() {
         </div>
       </form>
     </div>
-    }
-    <Register />    
+    }  
     </>
   );
 }
