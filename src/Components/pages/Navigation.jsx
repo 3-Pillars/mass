@@ -8,7 +8,40 @@ function Navigation() {
     <>
     <div className="page-body">
       <h1>Navigation™</h1>
+      {/* NB: Raton Copy */}
       <span>
+        Your soul is weighed down by the burden of false preconceptions, holding you back from your ultimate purpose. For too long, you have been lost, adrift as time slipped by. But a new path has been forged, revealing that life and death are but two sides of the same sacred coin.
+        <br />
+      </span>
+      <span>
+        <br />
+        Wake up with MASS INC and find your truth.
+      </span>
+      <span>
+        <br />
+      </span>
+      <span>
+        <br />
+        The blessed Three Pillars, at the sacred meeting ground of Catrosfe, revealed a divine technique to shed your earthly inhibitions: NAVIGATE. By using the naturally occurring cosmic energy of the holy Kuiper Crystals, they learned to transcend spacetime and anchor themselves in the present—a power that now awaits you.
+        <br />
+      </span>
+      <span>
+        <br />
+        This divine frequency is within every living being, but it requires great concentration, discipline, and, most importantly, faith to attune yourself. Take our calibration test and begin your spiritual journey today. The test is more than a measurement; it is your first step toward awakening. You will receive divine wisdom at the end of the test, and your perception of reality will be forever changed.
+        <br />
+      </span>
+      <span>
+        <br />
+        The time for your transformation is now.
+        <br />
+        <br />
+        *Results may vary
+      </span>
+
+
+
+      {/* NB: My copy */}
+      {/* <span>
       Awakening is the realization that life, death, giving,taking are all intertwined. Just as these are the same concepts, forever joined; time does not pass in seconds but flows in rhythm with the universe itself. True clarity pierces the illusion of perception and reveals that in fact you are reality, and you belong exactly where you are, right now.
       <br />
       <br />
@@ -26,7 +59,7 @@ function Navigation() {
       <br />
       <br />
       *Results may vary
-      </span>
+      </span> */}
       <br />
       {/* <div style={{
         'width': '100%',
