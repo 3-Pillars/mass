@@ -1,6 +1,7 @@
 'use strict'
 import Placeholder from "../Placeholder";
 import diagram from '../../../public/assets/diagram.png'
+import kuiperWhiteLines from '../../../public/assets/kuiper_white_lines.png'
 
 
 function Techniques() {
@@ -15,7 +16,7 @@ function Techniques() {
         'display': 'flex',
         'justifyContent': 'center'
       }}>
-        <img src={diagram} style={{
+        <img src={kuiperWhiteLines} style={{
           'width':'75%',
           'padding': '10px',
           'margin': '3% 0 0 0'
