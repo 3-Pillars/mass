@@ -1,11 +1,5 @@
 'use strict'
-import Placeholder from "../Placeholder";
 import '../../../public/subpage.css'
-import mapShot from '../../../public/assets/map_screenshot_proto.jpg'
-import water from '../../../public/assets/water.png'
-import mountain from '../../../public/assets/mountain.jpg'
-import meditation from '../../../public/assets/meditation.jpg'
-import tea from '../../../public/assets/tea.jpg'
 import breathe from '../../../public/assets/symbols/breathe.png'
 import cleanse from '../../../public/assets/symbols/cleanse.png'
 import consume from '../../../public/assets/symbols/consume.png'
