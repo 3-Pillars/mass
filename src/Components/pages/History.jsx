@@ -27,7 +27,10 @@ function History() {
         </div>
        
         <div className='info-chunk chunk-right'>
-          <img src={walking} style={{display: "flex", alignItems: "float-start", width: '45%', margin: "auto", paddingRight: '20px', verticalAlign:"top"}}/>
+          <div style={{textAlign: 'center', marginLeft: '-13%'}}>
+            <img src={walking} style={{display: "flex", width: '65%', margin: "auto", paddingRight: '20px', verticalAlign:"top"}}/>
+              <span style={{display: 'inline'}}>walking</span>
+          </div>
           <div className='chunk-text'>
             <br />
             <span>
