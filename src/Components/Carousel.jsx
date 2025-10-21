@@ -5,6 +5,7 @@ import { Link, NavLink, useMatch, useResolvedPath } from "react-router-dom"
 import diagram from '../../public/assets/diagram.png'
 import notebook_glyphs from '../../public/assets/notebook_glyphs.jpg'
 import grandpa_willow from '../../public/assets/grandpa_willow.jpg'
+// import kuiper_presentation from '../../public/assets/kuiper_presentation.jpg'
 
 export default function Carousel () {
     const [currentSlide, setCurrentSlide] = useState(0)
