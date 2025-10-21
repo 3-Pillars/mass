@@ -48,7 +48,7 @@ function History() {
                 Some say that the strings of fate brought the 3 founding pillars together, but together the retreat experiences create a foundation for more pillars to be built up.
               </span>
           </div>
-           <img src={catstrofe} style={{width: '45%', margin: "auto", display: "block"}}/>
+           <img src={catstrofe} style={{width: '45%', margin: "auto", display: "block", paddingLeft: '20px', verticalAlign:"top"}}/>
         </div>
       </div>
     </>
