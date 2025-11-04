@@ -1,6 +1,7 @@
 'use strict'
 import Placeholder from "../Placeholder";
 import diagram from '../../../public/assets/diagram.png'
+import navigation from '../../../public/assets/symbols/navigate.png'
 
 
 function Navigation() {
@@ -8,8 +9,45 @@ function Navigation() {
     <>
     <div className="page-body">
       <h1>Navigation™</h1>
-      {/* NB: Raton Copy */}
       <span>
+        Our patented technique that brings helps brings true alignment and avoid the feeling of being lost. While all of our techniques are important, this is the most crucial one.
+        <br />
+      </span>
+      <div style={{padding: "2%"}}>
+        <img src={navigation} style={{width: "80%", margin: "auto", display:"block"}}/>
+      </div>
+      <span>
+        <br />
+        Navigation™ allows us to locate where we are in both the known and unknown universe. It is easy to encounter sensations of aimlessness in life. Many say it is even natural. However, we know that is not true.
+      </span>
+      <span>
+        <br />
+      </span>
+      <span>
+        <br />
+          Feeling lost is simply an indication that we are have found ourselves unable to connect with the cosmos around us. And while natural for many lower and base lifeforms such as protozoa, it is not for us. Our ancestors historically were very tapped into the cosmic fabric weaving. However, we have long been seperated from these roots of constant visions of god and the divine. 
+        <br />
+      </span>
+      <span>
+        <br />
+          It is our right and natural way and we have lost it. Navigation™ seeks to restore that by use of the kuiper crystal energy.
+        <br />
+      </span>
+      <span>
+        <br />
+        Navigation™ corrects that by pointing us towards the chronological and temporal geolocation of the Great Convergence. 
+        <br />
+      </span>
+      <span>
+        <br />
+        We guarantee* that anyone can learn to Navigate™ and reclaim their ancestral ways of connection, including you! 
+        <br />
+        <br />
+        *Results may vary
+      </span>
+
+      {/* NB: Raton Copy */}
+      {/* <span>
         Your soul is weighed down by the burden of false preconceptions, holding you back from your ultimate purpose. For too long, you have been lost, adrift as time slipped by. But a new path has been forged, revealing that life and death are but two sides of the same sacred coin.
         <br />
       </span>
@@ -36,7 +74,7 @@ function Navigation() {
         <br />
         <br />
         *Results may vary
-      </span>
+      </span> */}
 
 
 
