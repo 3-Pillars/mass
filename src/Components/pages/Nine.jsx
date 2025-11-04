@@ -1,5 +1,6 @@
 'use strict'
 import CustomLink from "../CustomLink";
+import aspects from '../../../public/assets/symbols/aspects_temp.png'
 
 
 function Nine() {
@@ -10,6 +11,9 @@ function Nine() {
       <span>
         The Nine are our true saviors in this world. They are our connection to the trapped god, the one who was betrayed by those whom he called friends. They are he, and he is they. Each are an Aspect of the whole, and united they can finally bring us the salvation that we have long sought after in this broken world.
       </span>
+      <div style={{padding: "2%"}}>
+        <img src={aspects} style={{"width": "55%", margin: "auto", display:"block"}}/>
+      </div>
       <br /><br />
       <span>
       Moments before his imprisonment by the pantheon, he began the ancient ritual of soul dispersal as a way to achieve freedom. However, immediately prior to releasing his selves, he was sealed by a divine awareness enchantment. And thus he would lie for millennia, undisturbed.
